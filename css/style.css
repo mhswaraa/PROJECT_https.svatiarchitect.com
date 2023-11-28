@@ -62,6 +62,17 @@ body {
     object-fit: cover;
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+        overflow: auto; /* Atur kembali overflow menjadi auto untuk mengizinkan scrolling pada perangkat seluler */
+        cursor: auto; /* Atur kembali kursor ke nilai default */
+    }
+
+    #cursor,
+    #cursor-border {
+        display: none /* Sembunyikan kursor dan border kursor pada layar seluler */
+    }
+}
 
 /*** Spinner ***/
 #spinner {

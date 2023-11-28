@@ -96,6 +96,44 @@
 
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
+
+    // Cursor Style
+    const cursor = document.querySelector("#cursor");
+    const cursorBorder = document.querySelector("#cursor-border");
+    const cursorPos = {
+        x: 0,
+        y: 0,
+    };
+    const cursorBorderPos = {
+        x: 0,
+        y: 0,
+    };
+
+    document.addEventListener("mousemove", (e) => {
+        cursorPos.x = e.clientX;
+        cursorPos.y = e.clientY;
+
+        cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+    });
+
+    requestAnimationFrame(function loop() {
+        const easing = 5; // Ganti dengan nilai easing yang sesuai
+        cursorBorderPos.x += (cursorPos.x - cursorBorderPos.x) / easing;
+        cursorBorderPos.y += (cursorPos.y - cursorBorderPos.y) / easing;
+
+        cursorBorder.style.transform = `translate(${cursorBorderPos.x}px, ${cursorBorderPos.y}px)`;
+        requestAnimationFrame(loop);
+    });
+
+    // Mengganti cursorBorder dengan logo
+    const logoSrc = "/img/icon/mouse.png"; // Ganti dengan path logo Anda
+    const logo = new Image();
+    logo.src = logoSrc;
+
+    logo.onload = function () {
+        cursorBorder.innerHTML = ""; // Mengosongkan elemen
+        cursorBorder.appendChild(logo); // Menambahkan logo ke dalam cursorBorder
+    };
     
 })(jQuery);
 
