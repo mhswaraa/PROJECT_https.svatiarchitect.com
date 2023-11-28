@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Woody - Carpenter Website Template</title>
+    <title>Svatiarchitect.com</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -34,30 +34,17 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- Brand Style -->
+    
     <style>
-        /* Style for Navbar Brand */
-        .navbar-brand {
-            text-decoration: none;
-            color: #333; /* Your desired text color */
-            display: flex;
-            align-items: center;
-            padding: 8px 20px; /* Adjust padding as needed */
-        }
-
-        .navbar-brand h2 {
-            margin: 0; /* Remove default margin for h2 */
-            margin-top: 10px;
-            font-size: 30px; /* Your desired font size */
-            font-weight: bold;
-            color: #8b7d68;
-            font-family: 'Prata', serif; /* Your desired font family */
-        }
+       
     </style>
+    
     
 </head>
 
 <body>
+    <div id="cursor"></div>
+    <div id="cursor-border"></div>
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -74,7 +61,7 @@
                 <div class="h-100 d-inline-flex align-items-center py-3 me-4">
                     <small class="fa fa-map-marker-alt text-primary me-2"></small>
                     <small>
-                        <a style="font-family: 'Libre Baskerville', serif;" href="https://www.google.com/maps/@-7.5835141,110.8189909,3a,75y,181.44h,75.64t/data=!3m6!1e1!3m4!1sCUViXcib5IQhd_bxUk36LA!2e0!7i13312!8i6656?hl=id&entry=ttu">Jl. Bima VI No. 6, Serengan, Surakarta</a>
+                        <a style="font-family: 'Libre Baskerville', serif; cursor: none;" href="https://www.google.com/maps/@-7.5835141,110.8189909,3a,75y,181.44h,75.64t/data=!3m6!1e1!3m4!1sCUViXcib5IQhd_bxUk36LA!2e0!7i13312!8i6656?hl=id&entry=ttu">Jl. Bima VI No. 6, Serengan, Surakarta</a>
                     </small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center py-3">
@@ -104,7 +91,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <img src="img/logo/7d70e22e-f682-439e-9b04-76413ac45915-removebg-preview.png" alt="" height="70" style="margin-left:-10px;">
+            <img src="img/logo/logo1.png" alt="" height="70" style="margin-left:-10px;">
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -136,7 +123,7 @@
 
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0 pb-5">
+    <div class="container-fluid p-0 pb-5 carausel">
         <div class="owl-carousel header-carousel position-relative">
             <div class="owl-carousel-item position-relative">
                 <img class="img-fluid" src="img/caraousel/carousel.jpeg" alt="">
@@ -196,7 +183,7 @@
 
 
     <!-- Feature Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5" id="">
         <div class="container">
             <div class="row g-5">
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
@@ -243,10 +230,8 @@
     </div>
     <!-- Feature Start -->
 
-
-
     <!-- About Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0" id="about">
         <div class="container about px-lg-0">
             <div class="row g-0 mx-lg-0">
                 <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
@@ -291,9 +276,8 @@
     </div>
     <!-- About End -->
 
-
     <!-- Service Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5" id="service">
         <div class="container">
             <div class="section-title text-center">
                 <h1 style="font-family: 'Prata', serif;" class="display-5 mb-5">Our Services</h1>
@@ -302,7 +286,7 @@
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item">
                         <div class="overflow-hidden">
-                            <a href="img/design_package.jpeg" data-lightbox="Certificate"><img class="img-fluid" src="img/service/design_package.jpeg" alt=""></a>
+                            <a href="img/design_package.jpeg" data-lightbox="Certificate"><img class="img-fluid" src="img/service/design-package.jpeg" alt=""></a>
                         </div>
                         <div class="p-4 text-center border border-5 border-light border-top-0">
                             <h4 class="mb-3">DESIGN PACKAGE</h4>
@@ -314,7 +298,7 @@
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item">
                         <div class="overflow-hidden">
-                            <a href="img/contruction.jpeg" data-lightbox="Certificate"><img class="img-fluid" src="img/service/contruction.jpeg" alt=""></a>
+                            <a href="img/contruction.jpeg" data-lightbox="Certificate"><img class="img-fluid" src="img/service/contruction-package.jpeg" alt=""></a>
                         </div>
                         <div class="p-4 text-center border border-5 border-light border-top-0">
                             <h4 class="mb-3">CONSTRUCTION PACKAGE</h4>
@@ -326,7 +310,7 @@
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item">
                         <div class="overflow-hidden">
-                            <a href="img/brosur/brosur1.png" data-lightbox="Certificate"><img class="img-fluid" src="img/service/interior.png" alt=""></a>
+                            <a href="img/brosur/brosur1.png" data-lightbox="Certificate"><img class="img-fluid" src="img/service/custom-interior.png" alt=""></a>
                         </div>
                         <div class="p-4 text-center border border-5 border-light border-top-0">
                             <h4 class="mb-3">INTERIOR PACKAGE</h4>
@@ -376,9 +360,8 @@
     </div>
     <!-- Service End -->
 
-
     <!-- Feature Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0" id="why">
         <div class="container feature px-lg-0">
             <div class="row g-0 mx-lg-0">
                 <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.5s">
@@ -445,8 +428,8 @@
     </div>
     <!-- Feature End -->
 
-    <!-- Projects Start -->
-    <div class="container-xxl py-5">
+     <!-- Projects Start -->
+     <div class="container-xxl py-5" id="project">
         <div class="container">
             <div class="section-title text-center">
                 <h1 class="display-5 mb-5">Our Projects</h1>
@@ -455,8 +438,8 @@
                 <div class="col-12 text-center">
                     <ul class="list-inline mb-5" id="portfolio-flters">
                         <li class="mx-2 active" data-filter="*">All</li>
-                        <li class="mx-2" data-filter=".first">General Carpentry</li>
-                        <li class="mx-2" data-filter=".second">Custom Carpentry</li>
+                        <li class="mx-2" data-filter=".first">Process</li>
+                        <li class="mx-2" data-filter=".second">House Design</li>
                     </ul>
                 </div>
             </div>
@@ -464,90 +447,92 @@
                 <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                            <img class="img-fluid w-100" src="img/project/1.png" alt="">
                             <div class="portfolio-overlay">
                                 <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
-                            <p class="text-primary fw-medium mb-2">General Carpentry</p>
-                            <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
+                            <p class="text-primary fw-medium mb-2">Process</p>
+                            <h5 class="lh-base mb-0"> Proses Pembangunan Rumah Bu Dewi di Gentan, 2023</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
+                            <img class="img-fluid w-100" src="img/project/3.png" alt="">
                             <div class="portfolio-overlay">
                                 <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
-                            <p class="text-primary fw-medium mb-2">Custom Carpentry</p>
-                            <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
+                            <p class="text-primary fw-medium mb-2">Design House</p>
+                            <h5 class="lh-base mb-0"><br>Rumah Pak Aris di Serengan, 2018
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
+                            <img class="img-fluid w-100" src="img/project/2.png" alt="">
                             <div class="portfolio-overlay">
                                 <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
-                            <p class="text-primary fw-medium mb-2">General Carpentry</p>
-                            <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
+                            <p class="text-primary fw-medium mb-2">Process</p>
+                            <h5 class="lh-base mb-0">Proses Pembangunan Kantor Pak H di Pucangsawit, 2023
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
+                            <img class="img-fluid w-100" src="img/project/4.png" alt="">
                             <div class="portfolio-overlay">
                                 <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
-                            <p class="text-primary fw-medium mb-2">Custom Carpentry</p>
-                            <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
+                            <p class="text-primary fw-medium mb-2">Design House</p>
+                            <h5 class="lh-base mb-0">Desain Rumah Pak Santo di Purbayan, 2023</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
+                            <img class="img-fluid w-100" src="img/project/5.png" alt="">
                             <div class="portfolio-overlay">
                                 <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
-                            <p class="text-primary fw-medium mb-2">General Carpentry</p>
-                            <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
+                            <p class="text-primary fw-medium mb-2">Design House</p>
+                            <h5 class="lh-base mb-0"><br>Perumahan di Solo Baru, 2022</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
+                            <img class="img-fluid w-100" src="img/project/6.png" alt="">
                             <div class="portfolio-overlay">
                                 <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
-                            <p class="text-primary fw-medium mb-2">Custom Carpentry</p>
-                            <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
+                            <p class="text-primary fw-medium mb-2">design House</p>
+                            <h5 class="lh-base mb-0"><br>Desain Rumah, 2022</a>
                         </div>
                     </div>
                 </div>
@@ -556,9 +541,8 @@
     </div>
     <!-- Projects End -->
 
-
     <!-- Quote Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0" id="quote">
         <div class="container about px-lg-0">
             <div class="row g-0 mx-lg-0">
                 <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
@@ -571,8 +555,8 @@
             <div class="section-title text-start">
                 <h1 class="display-5 mb-4">Free Quote</h1>
             </div>
-            <p class="mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
-            <form>
+            <p class="mb-4 pb-2">Untuk konsultasi dan pemesanan sesuai dengan paket yang Anda pilih, silakan klik link berikut</p>
+            <!-- <form>
                 <div class="row g-3">
                     <div class="col-12 col-sm-6">
                         <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
@@ -593,9 +577,9 @@
                     </div>
                     <div class="col-12">
                         <textarea class="form-control border-0" placeholder="Special Note"></textarea>
-                    </div>
+                    </div> -->
                     <div class="col-12">
-                        <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
+                        <a href="quote.html"><button class="btn btn-primary w-100 py-3" type="submit">Get A Quote</button></a>
                     </div>
                 </div>
             </form>
@@ -607,130 +591,15 @@
     </div>
     <!-- Quote End -->
     
-    
-    <!-- Team Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="section-title text-center">
-                <h1 class="display-5 mb-5">Team Members</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item">
-                        <div class="overflow-hidden position-relative">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center border border-5 border-light border-top-0 p-4">
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <div class="overflow-hidden position-relative">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center border border-5 border-light border-top-0 p-4">
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item">
-                        <div class="overflow-hidden position-relative">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center border border-5 border-light border-top-0 p-4">
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item">
-                        <div class="overflow-hidden position-relative">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center border border-5 border-light border-top-0 p-4">
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
-
-
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="section-title text-center">
-                <h1 class="display-5 mb-5">Testimonial</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel">
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 90px; height: 90px;">
-                    <div class="testimonial-text text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                        <h5 class="mb-1">Client Name</h5>
-                        <span class="fst-italic">Profession</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 90px; height: 90px;">
-                    <div class="testimonial-text text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                        <h5 class="mb-1">Client Name</h5>
-                        <span class="fst-italic">Profession</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 90px; height: 90px;">
-                    <div class="testimonial-text text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                        <h5 class="mb-1">Client Name</h5>
-                        <span class="fst-italic">Profession</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
-
-
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Address</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Jl Bima VI no 6 Serengan Solo 57155</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(0271) 667732</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@svatiarchitect.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -740,23 +609,23 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Services</h4>
-                    <a class="btn btn-link" href="">General Carpentry</a>
-                    <a class="btn btn-link" href="">Furniture Remodeling</a>
-                    <a class="btn btn-link" href="">Wooden Floor</a>
+                    <a class="btn btn-link" href="">Design Package</a>
+                    <a class="btn btn-link" href="">Construction Package </a>
+                    <a class="btn btn-link" href="">Interior Package</a>
                     <a class="btn btn-link" href="">Wooden Furniture</a>
                     <a class="btn btn-link" href="">Custom Carpentry</a>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6" id="quicklinks">
                     <h4 class="text-light mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
+                    <a class="btn btn-link" href="#about">About Us</a>
+                    <a class="btn btn-link" href="#project">Project</a>
+                    <a class="btn btn-link" href="#service">Our Services</a>
+                    <a class="btn btn-link" href="#why">Why Choose Us</a>
+                    <a class="btn btn-link" href="#quote">Quote</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <p>Get a free design and new update from us</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
                         <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
                         <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
@@ -778,12 +647,14 @@
             </div>
         </div>
     </div>
-    <!-- Footer End -->
+
+      <!-- Dot Cursor Elements -->
 
 
     <!-- Back to Top -->
- <a href="https://wa.me/6282138555403" class="btn-bt btn-lg float btn-lg-square"><i class="bi bi-whatsapp" style="font-size: 37px; margin-left: 2px;"></i>
-</a>
+    <a href="https://wa.me/6282138555403" class="btn-bt btn-lg float btn-lg-square">
+        <i class="bi bi-whatsapp" style="font-size: 37px; margin-left: 2px;"></i>
+    </a>
 
 
     <!-- JavaScript Libraries -->
@@ -799,6 +670,46 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-</body>
 
+    <script>
+        const cursor = document.querySelector("#cursor");
+        const cursorBorder = document.querySelector("#cursor-border");
+        const cursorPos = {
+            x: 0,
+            y: 0,
+        };
+        const cursorBorderPos = {
+            x: 0,
+            y: 0,
+        };
+    
+        document.addEventListener("mousemove", (e) => {
+            cursorPos.x = e.clientX;
+            cursorPos.y = e.clientY;
+    
+            cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+        });
+    
+        requestAnimationFrame(function loop() {
+            const easing = 5; // Ganti dengan nilai easing yang sesuai
+            cursorBorderPos.x += (cursorPos.x - cursorBorderPos.x) / easing;
+            cursorBorderPos.y += (cursorPos.y - cursorBorderPos.y) / easing;
+    
+            cursorBorder.style.transform = `translate(${cursorBorderPos.x}px, ${cursorBorderPos.y}px)`;
+            requestAnimationFrame(loop);
+        });
+    
+        // Mengganti cursorBorder dengan logo
+        const logoSrc = "/img/icon/mouse.png"; // Ganti dengan path logo Anda
+        const logo = new Image();
+        logo.src = logoSrc;
+    
+        logo.onload = function () {
+            cursorBorder.innerHTML = ""; // Mengosongkan elemen
+            cursorBorder.appendChild(logo); // Menambahkan logo ke dalam cursorBorder
+        };
+    </script>
+    
+</body>
 </html>
+   

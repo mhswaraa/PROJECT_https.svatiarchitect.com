@@ -25,6 +25,43 @@
     z-index: 99;
 }
 
+/** Cursor Style **/
+body {
+    margin: 0;
+    overflow: auto;
+    cursor: none;
+}
+
+#cursor {
+    position: fixed;
+    background-color: #3498db;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform-origin: 50% 50%;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: difference;
+}
+
+#cursor-border {
+    position: fixed;
+    background-color: transparent;
+    border: none;
+    width: var(--size, 50px);
+    height: var(--size, 50px);
+    border-radius: 100%;
+    transform-origin: 50% 50%;
+    z-index: 9998;
+    pointer-events: none;
+}
+
+#cursor-border img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 /*** Spinner ***/
 #spinner {
@@ -47,6 +84,7 @@
     transition: 0.5s;
     position: relative;
     overflow: hidden;
+    cursor:none;
 }
 
 .btn.btn-primary,
@@ -92,13 +130,14 @@
     transform: scale(1.1);
 }
 
-/* Button-bt */
+/** Button-bt **/
 
 .btn-bt {
     font-weight: 500;
     transition: 0.5s;
     position: relative;
     overflow: hidden;
+    cursor: none;
 }
 
 .btn-bt::before {
@@ -204,6 +243,23 @@ h5,
 .navbar-light.sticky-top {
     top: -100px;
     transition: .5s;
+}
+
+ .navbar-brand {
+    text-decoration: none;
+    color: #333; /* Your desired text color */
+    display: flex;
+    align-items: center;
+    padding: 8px 20px; /* Adjust padding as needed */
+}
+
+.navbar-brand h2 {
+    margin: 0; /* Remove default margin for h2 */
+    margin-top: 10px;
+    font-size: 30px; /* Your desired font size */
+    font-weight: bold;
+    color: #8b7d68;
+    font-family: 'Prata', serif; /* Your desired font family */
 }
 
 
