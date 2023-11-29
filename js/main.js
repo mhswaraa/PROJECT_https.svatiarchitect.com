@@ -126,7 +126,7 @@
     });
 
     // Mengganti cursorBorder dengan logo
-    const logoSrc = "/img/icon/mouse.png"; // Ganti dengan path logo Anda
+    const logoSrc = "img/icon/mouse.png"; // Ganti dengan path logo Anda
     const logo = new Image();
     logo.src = logoSrc;
 
