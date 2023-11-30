@@ -1,0 +1,274 @@
+/* CSS RESET */
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+
+.contact-section {
+	background-color: #f8f8f8;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	font-size: 1.6rem;
+	font-family: 'Roboto', sans-serif;
+}
+
+.page-title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 80px;
+}
+
+.page-title h3 {
+	color: #9a9bb7;
+	font-size: 3rem;
+	font-weight: 500;
+}
+
+.page-title h5 {
+	color: #333;
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+
+.container {
+	max-width: 1024px;
+	min-height: 500px;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+/* Heading Form */
+
+.image-container {
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 60px;
+  }
+
+  
+  .side-image {
+	margin-top: -25px;
+	margin-right: 10px; /* Sesuaikan jarak antara gambar dan teks sesuai kebutuhan */
+	width:60px; /* Memastikan gambar tidak melebihi lebar div */
+	height: 60px; /* Memastikan gambar tetap proporsional */
+  }
+  
+
+/*----------------------------*/
+
+/*RIGHT SIDE*/
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 65%;
+	padding: 30px;
+}
+
+.a-row {
+	display: flex;
+	margin-bottom: 25px;
+}
+
+/* Style Input elements
+-------------------------------*/
+
+.a-input-field {
+	position: relative;
+	width: 100%;
+
+}
+
+.a-input-field:not(:last-child) {
+	margin-right: 30px;
+}
+
+.a-input-field::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #d7d7e2;
+	transition: all .3s;
+}
+
+.a-input-field:focus-within::after {
+	background-color: #9a9bb7;
+}
+
+.floating-label {
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 1.4rem;
+	color: #9a9bb7;
+}
+
+.a-input-txt {
+	border: none;
+	outline: none;
+	font-size: 1.6rem;
+	margin: 24px 0 10px 0;
+	width: 100%;
+	font-family: inherit;
+}
+
+.input-icon-container {
+    display: flex;
+    align-items: center;
+  }
+
+.input-icon-container i {
+    margin-right: 10px; /* Sesuaikan jarak ikon dengan input sesuai kebutuhan */
+    margin-top: 10px;
+    font-size:15px;
+  }
+  
+.input-icon-container label {
+    margin: 0; /* Menghapus margin pada label agar sejajar dengan ikon */
+  }
+
+.a-textarea {
+	border: none;
+	outline: none;
+	font-size: 1.6rem;
+	margin: 24px 0 10px 0;
+	font-family: inherit;
+	width: 100%;
+	height: 100px;
+	resize: vertical;
+}
+
+/*-------------------------------*/
+
+/* Purple big button */
+
+.btn-big {
+	background-color: #9a9bb7;
+	color: white;
+	padding: 20px 35px;
+	font-family: inherit;
+	font-weight: 400;
+	font-size: 1.5rem;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.btn-big:hover, .btn-big:focus {
+	background-color: #62636a;
+}
+
+/*---------------------------*/
+
+/* Input type checkbox */
+
+.checkbox-container {
+	position: relative;
+	display: flex;
+	padding-left: 20px;
+	cursor: pointer;
+	user-select: none;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.checkbox-container:not(:last-child) {
+	margin-right: 30px;
+}
+
+.checkbox-container input {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.checkmark {
+	position: absolute;
+	left: 0;
+	height: 1.6rem;
+	width: 1.6rem;
+	border: 1px solid #acadc3;
+	border-radius: 50%;
+}
+
+.checkbox-container input:checked~.checkmark {
+	background-color: #9a9bb7;
+}
+
+.checkmark::after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.checkbox-container input:checked~.checkmark::after {
+	display: block;
+	content: "\2713";
+	color: white;
+	position: absolute;
+	font-size: 1.5rem;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*--------------------------------*/
+
+/* Atomic css styles */
+
+.a-sm-btm-margin {
+	margin-bottom: 8px;
+}
+
+.fields-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.to-right {
+	margin-left: auto;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 768px) {
+	.container {
+		flex-direction: column;
+	}
+	.a-row {
+		flex-direction: column;
+		align-items: flex-start;
+		margin-bottom: 0;
+	}
+	.a-input-field {
+		margin-bottom: 20px;
+	}
+}
