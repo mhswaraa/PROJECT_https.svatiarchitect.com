@@ -166,21 +166,19 @@ a {
 /* Purple big button */
 
 .btn-big {
-	background-color: #9a9bb7;
+	background-color:#fff;
 	color: white;
-	padding: 20px 35px;
+	padding: 20px;
 	font-family: inherit;
 	font-weight: 400;
-	font-size: 1.5rem;
+	font-size: 15px;
 	border: none;
 	outline: none;
 	border-radius: 10px;
 	cursor: pointer;
 }
 
-.btn-big:hover, .btn-big:focus {
-	background-color: #62636a;
-}
+
 
 /*---------------------------*/
 
@@ -269,7 +267,7 @@ a {
 
 @media only screen and (max-width: 768px) {
 	.container {
-		flex-direction: column;
+		flex-direction:row;
 	}
 	.a-row {
 		flex-direction: column;
