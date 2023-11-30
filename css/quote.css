@@ -255,7 +255,7 @@ a {
 
 .to-left {
 	/* Gaya spesifik untuk button "Back" */
-	margin-right: auto;
+	margin-right: 10px;
   }
   
   .to-right {
@@ -267,7 +267,7 @@ a {
 
 @media only screen and (max-width: 768px) {
 	.container {
-		flex-direction:row;
+		flex-direction:row
 	}
 	.a-row {
 		flex-direction: column;
