@@ -245,6 +245,8 @@ a {
 
 .a-sm-btm-margin {
 	margin-bottom: 8px;
+	font-size: 1.4rem;
+	color: #9a9bb7;
 }
 
 .fields-container {
@@ -253,9 +255,15 @@ a {
 	width: 100%;
 }
 
-.to-right {
+.to-left {
+	/* Gaya spesifik untuk button "Back" */
+	margin-right: auto;
+  }
+  
+  .to-right {
+	/* Gaya spesifik untuk button "Send Message" */
 	margin-left: auto;
-}
+  }
 
 /* Responsive */
 
